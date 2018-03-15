@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# files generated during testing
+testfile.txt

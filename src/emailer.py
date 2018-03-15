@@ -13,3 +13,12 @@ def get_email_address(email_filename):
         print(err)
 
     return emails
+
+def get_schedule(schedule):
+    try:
+        schedule_file = open(schedule.name, 'r')
+        schedule_details = schedule_file.read()
+    except FileNotFoundError as err:
+        print(err)
+
+    return schedule_details

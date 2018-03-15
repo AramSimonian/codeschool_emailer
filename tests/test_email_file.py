@@ -14,12 +14,12 @@ class TestEmailMethods(unittest.TestCase):
         test_file.write(content)
         test_file.close()
 
-        return test_file
-
     def test_get_email_address(self):
+        self.create_test_file(self.TEST_EMAIL_CONTENT)
         self.assertEqual(self.TEST_EMAIL_RESULT
-            , emailer.get_email_address(self.create_test_file(self.TEST_EMAIL_CONTENT)))
+            , emailer.get_email_address(self.TEST_FILE_NAME))
 
     def test_get_schedule(self):
+        self.create_test_file(self.TEST_SCHEDULE_CONTENT)
         self.assertEqual(self.TEST_SCHEDULE_CONTENT
-            , emailer.get_schedule(self.create_test_file(self.TEST_SCHEDULE_CONTENT)))
+            , emailer.get_schedule(self.TEST_FILE_NAME))

@@ -29,3 +29,5 @@ def main():
 
     schedule = get_schedule('schedule.txt')
     print(schedule)
+
+main()

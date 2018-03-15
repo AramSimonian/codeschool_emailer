@@ -1,2 +1,2 @@
-bob.smith@company.com
-bobby.joe@southern.com
+bob.smith@company.com,Bob Smith
+bobby.joe@southern.com,Bobby Joe
